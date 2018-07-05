@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MBDesign_Tests' do
+  pod 'MBDesign', :path => '../'
+  
+  
+end

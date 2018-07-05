@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MBDesign'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MBDesign.'
+  s.version          = '1.0.0'
+  s.summary          = 'Una libreria per l\'utilizzo del material design su iOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,10 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Una libreria per l''utilizzo del material design su iOS.
+Gestisce Aree di testo e altert personalizzati
                        DESC
 
-  s.homepage         = 'https://github.com/Mattia Berretti/MBDesign'
+  s.homepage         = 'https://github.com/mattiaberretti/MBDesign'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mattia Berretti' => 'mattia.berretti@gmail.com' }

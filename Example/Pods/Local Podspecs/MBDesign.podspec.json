@@ -1,0 +1,22 @@
+{
+  "name": "MBDesign",
+  "version": "0.1.0",
+  "summary": "A short description of MBDesign.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Mattia Berretti/MBDesign",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mattia Berretti": "mattia.berretti@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Mattia Berretti/MBDesign.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MBDesign/Classes/**/*"
+}

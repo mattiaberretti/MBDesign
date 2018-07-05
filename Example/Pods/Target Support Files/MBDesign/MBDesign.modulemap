@@ -1,0 +1,6 @@
+framework module MBDesign {
+  umbrella header "MBDesign-umbrella.h"
+
+  export *
+  module * { export * }
+}

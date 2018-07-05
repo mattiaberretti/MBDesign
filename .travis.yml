@@ -12,4 +12,3 @@ language: objective-c
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/MBDesign.xcworkspace -scheme MBDesign-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
---swift-version=4.0

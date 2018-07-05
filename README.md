@@ -1,6 +1,6 @@
 # MBDesign
 
-[![CI Status](https://img.shields.io/travis/Mattia Berretti/MBDesign.svg?style=flat)](https://travis-ci.org/Mattia Berretti/MBDesign)
+[![CI Status](https://img.shields.io/travis/Mattia Berretti/MBDesign.svg?style=flat)](https://travis-ci.org/mattiaberretti/MBDesign)
 [![Version](https://img.shields.io/cocoapods/v/MBDesign.svg?style=flat)](https://cocoapods.org/pods/MBDesign)
 [![License](https://img.shields.io/cocoapods/l/MBDesign.svg?style=flat)](https://cocoapods.org/pods/MBDesign)
 [![Platform](https://img.shields.io/cocoapods/p/MBDesign.svg?style=flat)](https://cocoapods.org/pods/MBDesign)

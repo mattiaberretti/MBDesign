@@ -1,5 +1,5 @@
 PODS:
-  - MBDesign (0.1.0)
+  - MBDesign (1.0.0)
 
 DEPENDENCIES:
   - MBDesign (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MBDesign: f38da99c0600aa7d174e7541ce90c11873a4fe0f
+  MBDesign: ab4a677ef6cb1ecac495258e1d91457b6a48bece
 
 PODFILE CHECKSUM: 33619e151a821db816c0c67576bcf2cd96d3577a
 

@@ -29,10 +29,11 @@ public class BaseTextField: UITextField, TextField {
             self.inputAccessoryView = barra
         }
         
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil, queue: OperationQueue.main) { (notifica) in
+        
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillChangeFrameNotification, object: nil, queue: OperationQueue.main) { (notifica) in
             guard let manager = self.scrollManager else { return }
             
-            guard let frame = notifica.userInfo![UIKeyboardFrameEndUserInfoKey] as? CGRect else { return }
+            guard let frame = notifica.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
             
             manager.scroll(altezzaTastiera: frame.size.height)
         }
@@ -47,7 +48,7 @@ public class BaseTextField: UITextField, TextField {
     }()
     
     private lazy var backBtn: UIBarButtonItem = {
-        let ritorno = UIBarButtonItem(title: "<", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.backBtn(_:)))
+        let ritorno = UIBarButtonItem(title: "<", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.backBtn(_:)))
         if self.previusField == nil {
             ritorno.isEnabled = false
         }
@@ -55,7 +56,7 @@ public class BaseTextField: UITextField, TextField {
     }()
     
     private lazy var nextBtn: UIBarButtonItem = {
-        let ritorno = UIBarButtonItem(title: ">", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.nextBtn(_:)))
+        let ritorno = UIBarButtonItem(title: ">", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.nextBtn(_:)))
         if self.nextField == nil {
             ritorno.isEnabled = false
         }

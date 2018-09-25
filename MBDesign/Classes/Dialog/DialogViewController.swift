@@ -67,11 +67,11 @@ public class DialogViewController: UIViewController {
         var xPosition = self.areaBottoni.frame.size.width
         let altezzaArea = self.areaBottoni.frame.size.height
         for i in 0..<self.azioni.count {
-            let bottone = UIButton(type: UIButtonType.roundedRect)
-            bottone.setTitle(self.azioni[i].titolo, for: UIControlState.normal)
-            bottone.setTitleColor(UIColor.black, for: UIControlState.normal)
+            let bottone = UIButton(type: UIButton.ButtonType.roundedRect)
+            bottone.setTitle(self.azioni[i].titolo, for: UIControl.State.normal)
+            bottone.setTitleColor(UIColor.black, for: UIControl.State.normal)
             
-            bottone.addTarget(self, action: #selector(self.btnClick(_:)), for: UIControlEvents.touchUpInside)
+            bottone.addTarget(self, action: #selector(self.btnClick(_:)), for: UIControl.Event.touchUpInside)
             bottone.tag = i
             bottone.sizeToFit()
             xPosition -= bottone.frame.size.width
